@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav>
+        <h2 class="logo">Craft<span>.</span></h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button onclick="toggleMode()">🌙</button>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+        <img src="images/profile.jpg" class="profile-img" alt="profile">
+
+        <h1>Hello, I'm (your name) 👩‍💻</h1>
+        <h2><span id="typing"></span></h2>
+        <p>Frontend & Backend Developer</p>
+
+        <button>Hire Me</button>
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Sneha, a Computer Science student passionate about web development.
+            I love building websites and learning new technologies.
+        </p>
+    </section>
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="fade-in">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React (Learning)</li>
+        </ul>
+    </section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="fade-in">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <img src="images/profile1.jpg" alt="Project 1">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website made using HTML & CSS.</p>
+        </div>
+        <div class="project-card">
+            <img src="images/profile2.jpg" alt="Project 2">
+            <h3>Restaurant Website</h3>
+            <p>A responsive restaurant website design.</p>
+        </div>
+        <div class="project-buttons">
+            <a href="#" target="_blank" class="btn">Live Demo</a>
+            <a href="#" target="_blank" class="btn-online">GitHub</a>
+        </div>
+        
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <p>Feel free to contact me for freelance projects, collaborations, or job opportunities.</p>
+        <p>“This is a demo contact form. Backend integration can be added.”</p>
+        <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </section>
+
+
+    <!-- ================= JS FILE ================= -->
+    <script src="js/script.js"></script>
+    <!---=================footer section=============-->
+    <footer>
+    <p>© 2026 Sneha | All Rights Reserved</p>
+</footer>
+</body>
+</html>
